@@ -1,5 +1,3 @@
-/* Carousel */
-
 *,
 *:after,
 *:before {
@@ -18,17 +16,7 @@
   cursor: default;
 }
 
-html {
-  width: 100%;
-  height: auto;
-}
 
-body {
-  width: 100%;
-  height: auto;
-  font-size: 16px;
-  font-family: 'DM Sans';
-}
 .customer-review {
   display: flex;
   flex-direction: column;
@@ -69,8 +57,10 @@ body {
 }
 .testim {
   width: 100%;
-  position: absolute;
-  top: 50%;
+  margin-top:300px;
+  margin-bottom: -120px;
+  /* position: absolute;
+  top: 50%; */
   -webkit-transform: translatey(-50%);
   -moz-transform: translatey(-50%);
   -ms-transform: translatey(-50%);
@@ -145,7 +135,7 @@ body {
 }
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
-  background: url(./images/Frame\ 1.svg);
+  background: url(../images/customers-carousel/Frame1.svg);
   background-size: 15px;
   background-repeat: no-repeat;
   background-position-x: center;
