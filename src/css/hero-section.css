@@ -37,7 +37,7 @@ header {
     height: 502px;
 }
 
-.container {
+.container-hero {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
@@ -58,7 +58,7 @@ header {
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .container {
+        .container-hero {
             background-image: linear-gradient(to right,
                 #FFB8CA),
                 url(../images/hero-section/mobile/Ellipse-m-x2.png);
@@ -516,7 +516,7 @@ nav {
         height: 416px;
     }
 
-    .container {
+    .container-hero {
         padding: 32px 32px;
         background-image: url(../images/hero-section/tablet/Ellipse-t-x1.png);
         background-position: 65% 45%;
@@ -525,7 +525,7 @@ nav {
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .container {
+            .container-hero {
                 background-image: linear-gradient(to right,
                     #FFB8CA),
                     url(/src/images/hero-section/tablet/Ellipse-t-x2.png);
@@ -797,7 +797,7 @@ nav {
         height: 664px;
     }
 
-    .container {
+    .container-hero {
         padding: 37px 115px;
         background-image: url(../images/hero-section/desktop/Ellipse.png);
         background-position: 65% 45%;
@@ -806,7 +806,7 @@ nav {
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .container {
+            .container-hero {
                 background-image: linear-gradient(to right,
                     #FFB8CA),
                     url(../images/hero-section/desktop/Ellipse-x2.png);
