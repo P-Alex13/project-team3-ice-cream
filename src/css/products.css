@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 60px;
 }
 .products-title {
   display: flex;
@@ -17,6 +18,8 @@
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  padding-top: 60px;
+
 }
 .products-title h2 {
   color: #FFA5BA;
