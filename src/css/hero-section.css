@@ -288,7 +288,7 @@ nav {
 .image-milk {
     position: relative;
     padding-top: 40px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .image-milk:hover {
@@ -313,7 +313,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding-top: 108px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .image-ice-cream {

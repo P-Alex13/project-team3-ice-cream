@@ -52,9 +52,117 @@
                         <use href="./images/hero-section/header.svg#icon-arrow"></use>
                     </svg>
                 </button>
-                <div class="modal-menu modal" data-modal>
+                <div class=" modal is-visible is-hidden" data-modal>
                     <button class="button-close closeModalBtn" data-modal-close></button>
                     <!--De adaugat meniul pt tableta si telefon-->
+                    <form >
+      <div class="modal-content">
+        <button class="modal-close-button" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/modal-header/symbol-defs.svg#icon-close-button-symbol"></use>
+          </svg>
+        </button>
+        <div class="modal-form">
+          <form>
+            <div class="modal-header">
+              <h2>Our ice-cream will keep you COOL. Just choose some!</h2>
+            </div>
+
+            <div class="order-section">
+              <div class="product">
+                <img
+                  src="./images/modal-header/ice-cream-1.png"
+                  alt="Ice Cream"
+                />
+                <div class="order-amount">
+                  <label for="quantity"></label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    class="input"
+                    name="quantity"
+                    min="0"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+              <div class="product">
+                <img
+                  src="./images/modal-header/ice-cream-2.png"
+                  alt="Ice Coffee"
+                />
+                <div class="order-amount">
+                  <label for="quantity"></label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    class="input"
+                    name="quantity"
+                    min="0"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+              <div class="product">
+                <img
+                  src="./images/modal-header/ice-cream-3.png"
+                  alt="Milkshake"
+                />
+                <div class="order-amount">
+                  <label for="quantity"></label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    class="input"
+                    name="quantity"
+                    min="0"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form">
+              <label class="form-label" for="name">Name</label>
+              <div class="form-field">
+                <input type="text" id="name" class="input-field" name="name" />
+              </div>
+            </div>
+
+            <div class="form">
+              <label class="form-label" for="phone">Telephone</label>
+              <div class="form-field">
+                <input type="tel" id="phone" class="input-field" name="name" />
+              </div>
+            </div>
+
+            <div class="form">
+              <label class="form-label" for="Email">E-mail</label>
+              <div class="form-field">
+                <input
+                  type="email"
+                  id="name"
+                  class="input-field"
+                  name="E-mail"
+                />
+              </div>
+            </div>
+
+            <div class="textarea">
+              <label class="form-label" for="comments">Comments</label>
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="Write your impressions and maybe we'll even read them."
+              ></textarea>
+            </div>
+            <button class="modal-send-button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </fo>
+
+ 
                 </div>
             </div>
         </div>
