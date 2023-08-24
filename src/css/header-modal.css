@@ -320,6 +320,10 @@ textarea#comments::placeholder {
     font-size: 23px;
   }
 
+  .form{
+    width: 80%;
+  }
+
   .order-amount {
     width: 70%;
   }
