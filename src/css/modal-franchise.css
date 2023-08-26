@@ -13,14 +13,14 @@
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
-   .backdrop .modal{
+   .backdrop .modal2{
         opacity: 1;
     transform: translate(-50%,-50%)scale(1)rotate(0deg);
     display: flex;
     flex-direction: column;
    }
    
-   .modal{
+   .modal2{
         width: 90%;
     max-height:700px;
     padding: 35px 20px 20px;
