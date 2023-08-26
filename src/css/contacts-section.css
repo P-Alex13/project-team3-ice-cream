@@ -147,6 +147,11 @@
   .location-cards {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 32px;
+    padding: 0;
+    
   }
   .location-card-info {
     font-size: 14px;
