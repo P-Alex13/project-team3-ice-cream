@@ -1,4 +1,49 @@
 <header id="header">
+         <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="currentcolor"
+      >
+        <path d="M1.25925 1L14.7407 15" stroke="currentcolor" />
+        <path d="M1 14.7407L15 1.25924" stroke="currentcolor" />
+      </svg>
+    </button>
+    <div class="menu-mobile">
+      <div class="btn-mobile-inside-menu">
+        <button class="button-header-inside data-modal-open7 "
+          >Buy now
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="7"
+            height="10"
+            viewBox="0 0 7 10"
+            fill="none"
+          >
+            <path
+              d="M1.03772 1L5.71697 5L1.03772 9"
+              stroke="#D41443"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        
+      </div>
+      <ul class="nav-menu-mobile">
+        <li><a href="#header" class="link" href="#header">Home</a></li>
+        <li><a href="#reviews" class="link" href="#gallery1">About us</a></li>
+        <li><a href="#about" class="link" href="#How" >How it’s made?</a></li>
+        <li><a href="#products" class="link" href="#products">Our products</a></li>
+        <li class="second-link" ><a href="#contacts" class="link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
     <div class="bubbles">
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -29,28 +74,47 @@
                 <ul class="nav-list">
                     <li class="header-nav-item"><a class="header-link header-link-color" href="#header">Home</a>
                     </li>
-                    <li class="header-nav-item"><a class="header-link" href="#">About us</a></li>
-                    <li class="header-nav-item"><a class="header-link" href="#">How it’s made?</a></li>
-                    <li class="header-nav-item"><a class="header-link" href="#">Our products</a></li>
-                    <li class="header-nav-item"><a class="header-link" href="#">Contact</a></li>
+                    <li class="header-nav-item"><a class="header-link" href="#gallery1">About us</a></li>
+                    <li class="header-nav-item"><a class="header-link" href="#How">How it’s made?</a></li>
+                    <li class="header-nav-item"><a class="header-link" href="#products">Our products</a></li>
+                    <li class="header-nav-item"><a class="header-link" href="#contact-sec">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-buttons">
-                <div class="mobile-menu">
-                    <button type="button" class="burger" data-menu-open>
-                        <svg class="mobile-menu-btn" width="25" height="17">
-                            <use href="./images/hero-section/header.svg#icon-burger"></use>
-                        </svg>
-                    </button>
-                    <div data-menu>
-                        <button data-menu-close></button>
-                        <!--De adaugat meniul pt tableta si telefon-->
-                    </div>
-                </div>
+               <button
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="14"
+            viewBox="0 0 20 14"
+            fill="none"
+          >
+            <path d="M0 1H20" stroke="#D41443" />
+            <path d="M0 7H20" stroke="#D41443" />
+            <path d="M0 13H20" stroke="#D41443" />
+          </svg>
+        </button>
+                
                 <button class="button-header openModalBtn" type="button" data-modal-open>Buy now
-                    <svg width="4" height="8" viewBox="0 0 26 32" class="arrow">
-                        <use href="./images/hero-section/header.svg#icon-arrow"></use>
-                    </svg>
+                     <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="7"
+            height="10"
+            viewBox="0 0 7 10"
+            fill="none"
+          >
+            <path
+              d="M1.03772 1L5.71697 5L1.03772 9"
+              stroke="#D41443"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
                 </button>
                 <div class=" modal is-visible is-hidden" data-modal>
                     <button class="button-close closeModalBtn" data-modal-close></button>
@@ -63,7 +127,7 @@
           </svg>
         </button>
         <div class="modal-form">
-          <form>
+          <form id="for">
             <div class="modal-header">
               <h2>Our ice-cream will keep you COOL. Just choose some!</h2>
             </div>
@@ -77,12 +141,7 @@
                 <div class="order-amount">
                   <label for="quantity"></label>
                   <input
-                    type="number"
-                    id="quantity"
-                    class="input"
-                    name="quantity"
-                    min="0"
-                    placeholder="0"
+                  
                   />
                 </div>
               </div>
@@ -94,12 +153,7 @@
                 <div class="order-amount">
                   <label for="quantity"></label>
                   <input
-                    type="number"
-                    id="quantity"
-                    class="input"
-                    name="quantity"
-                    min="0"
-                    placeholder="0"
+                    
                   />
                 </div>
               </div>
@@ -111,48 +165,45 @@
                 <div class="order-amount">
                   <label for="quantity"></label>
                   <input
-                    type="number"
-                    id="quantity"
-                    class="input"
-                    name="quantity"
-                    min="0"
-                    placeholder="0"
+                    
                   />
                 </div>
               </div>
             </div>
 
             <div class="form">
-              <label class="form-label" for="name">Name</label>
+              <label class="form-label" >Name</label>
               <div class="form-field">
-                <input type="text" id="name" class="input-field" name="name" />
+                <input type="text" class="input-field" id="Name" />
               </div>
             </div>
 
             <div class="form">
-              <label class="form-label" for="phone">Telephone</label>
+              <label class="form-label" >Telephone</label>
               <div class="form-field">
-                <input type="tel" id="phone" class="input-field" name="name" />
+                <input type="tel"  class="input-field" id="Telephone"/>
               </div>
             </div>
 
             <div class="form">
-              <label class="form-label" for="Email">E-mail</label>
+              <label class="form-label" >E-mail</label>
               <div class="form-field">
                 <input
                   type="email"
-                  id="name"
+                  id="E-mail"
                   class="input-field"
-                  name="E-mail"
+                  
                 />
               </div>
             </div>
 
             <div class="textarea">
-              <label class="form-label" for="comments">Comments</label>
+              <label class="form-label" >Comments</label>
               <textarea
                 id="comments"
-                name="comments"
+                cols="20"
+                rows="5"
+               
                 placeholder="Write your impressions and maybe we'll even read them."
               ></textarea>
             </div>
@@ -160,7 +211,7 @@
           </form>
         </div>
       </div>
-    </fo>
+    </form>
 
  
                 </div>
