@@ -33,7 +33,7 @@ transform: translate(-50%, -50%), scale(.4) rotate(-180deg);
     display: flex;
     flex-direction: column;
         width: 90%;
-    max-height:528px;
+    max-height:450px;
     padding: 35px 20px 20px;
     background-color: #ffa5ba;
     border-radius: 24px;
@@ -100,6 +100,7 @@ transform: translate(-50%, -50%), scale(.4) rotate(-180deg);
     display: block;
         position: relative;
         margin-bottom: 5px;
+        width: 100%;
    }
 
    .modal-form__label{
@@ -190,6 +191,7 @@ transform: translate(-50%, -50%), scale(.4) rotate(-180deg);
     font-weight: 500;
     line-height: 1.785;
      margin-bottom: 20px;
+     width: 100%;
     
     }
 
@@ -321,7 +323,7 @@ resize: none;
 @media screen and ( max-width: 767px) {
     .modal2 {
     width: 100%;
-    max-width: 480px;
+    max-width: 400px;
     max-height: 98vh;
     padding: 30px;
 }
@@ -360,7 +362,7 @@ resize: none;
 
     .modal2{
         width: 100%;
-    max-width: 528px;
+    max-width: 450px;
     max-height: 98vh;
     padding: 30px;
 
@@ -371,7 +373,7 @@ resize: none;
 @media screen and (min-width: 1281px) {
     .modal2{
     width: 100%;
-    max-width: 528px;
+    max-width: 450px;
     max-height: 98vh;
     padding: 30px;
     }

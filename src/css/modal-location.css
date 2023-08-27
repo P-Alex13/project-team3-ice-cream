@@ -6,7 +6,7 @@
 :root {
   --main-color: #d41443;
   --white-color: #ffffff;
-  --background-color: #ffb8ca;
+  --background-color: #ffa5ba;
 }
 
  .backdrop2{
@@ -31,7 +31,7 @@
     max-width: 90%;
     transition: transform .25s cubic-bezier(.4,0,.2,1),opacity .25s cubic-bezier(.4,0,.2,1);
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     
 }
@@ -57,6 +57,7 @@
   justify-content: center;
   padding: 30px 50px;
   gap: 15px;
+  
 }
 
 .modal3-footer h2 {
