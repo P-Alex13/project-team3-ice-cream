@@ -95,6 +95,7 @@
 .ingredients {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 32px;
   background-color: #fff5f6;
   padding-bottom: 114px;
@@ -167,7 +168,7 @@
   .ingredients {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .ingredients-content h2 {
     font-size: 48px;
@@ -221,7 +222,6 @@
     display: flex;
     justify-content: flex-start;
     gap: 115px;
-    justify-content: center;
   }
   .ingredients-content h2 {
     font-size: 58px;
