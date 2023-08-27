@@ -247,6 +247,7 @@ nav {
     height: 26px;
     transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
     transition-property: all;
+    z-index: 1;
 }
 
 .button-product:hover, .button-product:focus {
@@ -840,7 +841,7 @@ nav {
     }
     
     .image-ice-cream {
-        right: 380px;
+        right: 500px;
         position: absolute;
         padding-left: 550px;
         padding-top: 20px;
