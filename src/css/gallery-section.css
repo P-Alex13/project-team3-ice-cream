@@ -107,7 +107,7 @@ section{
     position: relative;
   }
 
- 
+
 
   .box1,
   .box2,
@@ -142,19 +142,18 @@ section{
   
 
   .text-back {
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     font-family: 'Titan One';
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.2;
     transform: perspective(500px)translateZ(10px);
     display: flex;
+    color: black;
 
   }
 
-  section{
-        background-image: linear-gradient(#fff5f6 68%,#fff 68%);
-  }
+  
   .box1:hover .box-face, 
    .box2:hover .box-face,
    .box3:hover .box-face,
@@ -276,7 +275,7 @@ section{
 
   section{
     background-image: linear-gradient(#fff5f6 20.7%,#fff 20.7%);
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
 }
   
 
@@ -330,7 +329,7 @@ height: 430px;
 
   .text-back {
     
-    font-size: 20px;
+    font-size: 18px;
   }
 
 

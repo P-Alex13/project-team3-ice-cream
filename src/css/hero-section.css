@@ -15,10 +15,157 @@
   list-style: none;
 }
 
+/* Mobile Menu */
+.menu-mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-mobile-inside-menu{
+  display: flex;
+  justify-content: center;
+
+
+}
+.button-header-inside{
+  cursor: pointer;
+    font: 'DM Sans', sans-serif;
+    color: var(--main-color);
+    text-align: center;
+    height: 44px;
+    background: #fff;
+    border: none;
+    border-radius: 22px;
+    flex-shrink: 0;
+    padding: 0 43px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:14px;
+}
+
+
+.menu-mobile {
+  margin-top: 19px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-mobile .link:hover,
+.menu-mobile .link:active {
+  color: var(--main-color);
+}
+
+.menu-mobile li {
+  border-top: 1px solid #f9f5f6;
+  padding: 13px 0 13px 20px;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--white-color);
+  font-family: 'DM Sans' , sans-serif;
+}
+
+
+
+.nav-menu-mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu-mobile {
+  margin-top: 20px;
+  width: 100%; 
+}
+
+.nav-menu-mobile .link:hover,
+.nav-menu-mobile .link:active {
+  color: var(--main-color);
+}
+
+.nav-menu-mobile li {
+  padding: 13px ;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  font-family:'DM Sans' , sans-serif;
+}
+
+.nav-menu-mobile li a{
+  color:var(--white-color);
+  display: flex;
+  justify-content: center;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+    
+}
+
+
+.nav-menu-mobile li.second-link {
+  border-bottom: 1px solid #ffffff;
+}
+
+.menu-button{
+  background: 0 0;
+  border: none;
+    display: flex;
+    margin: 10px;
+}
+
+
+.js-menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #e17992;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.js-menu-container.is-open {
+  transform: translateX(0);
+}
+
+.js-menu-container .js-close-menu {
+  color: rgb(37, 2, 2);
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.js-menu-container .js-close-menu:hover,
+.js-menu-container .js-close-menu:focus {
+  color: rgb(6, 0, 0);
+  background: none;
+  box-shadow: none;
+}
+
+
+
 header {
     scroll-behavior: smooth;
     letter-spacing: .03em;
-    font-family: DM Sans, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     cursor: default;
 }
 
@@ -37,7 +184,7 @@ header {
     height: 502px;
 }
 
-.container {
+.container-hero {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
@@ -58,7 +205,7 @@ header {
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .container {
+        .container-hero {
             background-image: linear-gradient(to right,
                 #FFB8CA),
                 url(../images/hero-section/mobile/Ellipse-m-x2.png);
@@ -289,7 +436,7 @@ nav {
 .image-milk {
     position: relative;
     padding-top: 40px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .image-milk:hover {
@@ -314,7 +461,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding-top: 108px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .image-ice-cream {
@@ -501,7 +648,9 @@ nav {
     .image-milk {
         padding-top: 10px;
     }
-
+    .js-menu-container{
+      width: 275px;
+    }
     .description-product-container  {
         padding-top: 60px;
     }
@@ -517,7 +666,46 @@ nav {
         height: 416px;
     }
 
-    .container {
+    /* Mobile Menu */
+
+    .js-menu-container{
+      width: 275px;
+    }
+
+    .btn-mobile-inside-menu{
+  display: flex;
+  justify-content: center;
+  
+
+}
+.menu-mobile{
+    width: 100%;
+    margin-top: 19px;
+    
+}
+
+.nav-menu-mobile li a{
+  color:var(--white-color);
+ 
+}
+.button-header-inside{
+  
+  cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--main-color);
+    text-align: center;
+    height: 44px;
+    background: #fff;
+    border: none;
+    border-radius: 22px;
+    flex-shrink: 0;
+    padding: 0 43px;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+    .container-hero {
         padding: 32px 32px;
         background-image: url(../images/hero-section/tablet/Ellipse-t-x1.png);
         background-position: 65% 45%;
@@ -526,7 +714,7 @@ nav {
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .container {
+            .container-hero {
                 background-image: linear-gradient(to right,
                     #FFB8CA),
                     url(/src/images/hero-section/tablet/Ellipse-t-x2.png);
@@ -798,7 +986,11 @@ nav {
         height: 664px;
     }
 
-    .container {
+      .menu-button{
+       display: none;
+      }
+
+    .container-hero {
         padding: 37px 115px;
         background-image: url(../images/hero-section/desktop/Ellipse.png);
         background-position: 65% 45%;
@@ -807,7 +999,7 @@ nav {
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .container {
+            .container-hero {
                 background-image: linear-gradient(to right,
                     #FFB8CA),
                     url(../images/hero-section/desktop/Ellipse-x2.png);
